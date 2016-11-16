@@ -6,7 +6,7 @@ namespace ToDoList.Objects
   {
     private string _description;
     private int _id;
-    private static List<string> _instances = new List<string> {};
+    private static List<Task> _instances = new List<Task> {};
 
     // this instantiates a Task object, asking for a paramter which will then overwrite the _description variable.
     public Task (string description)
@@ -34,7 +34,7 @@ namespace ToDoList.Objects
       return _id;
     }
     // this is a method that passes the now public _description and actually changes its value
-    public static List<string> GetAll()
+    public static List<Task> GetAll()
     {
       return _instances;
     }
